@@ -13,4 +13,4 @@ The `#` represents the upsample value. (upsample = 0~2).
 Each row in the file represents one face detection run.
 
 For each row, the first element represents how many faces are detected from the entire dataset, 
-using the specific upsample value. The second element represents indicates time consumed (in seconds) to run through the dataset.
+using the specific upsample value. The second element indicates time consumed (in seconds) to run through the dataset.
