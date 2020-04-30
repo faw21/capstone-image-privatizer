@@ -7,8 +7,9 @@ Upgrade everything in Ubuntu and reboot:
 $ sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade
 $ sudo reboot
 ```
+## Install Nvidia Driver
 
-Then, type in the following command to display your GPU information:
+Type in the following command to display your GPU information:
 ```
 $ sudo lshw -c display
 ```
@@ -32,7 +33,9 @@ After installing the driver, you should use the following command to reboot your
 ```
 $ sudo shutdown -r now
 ```
-After rebooting, type `nvidia-smi` in terminal and you will see this:
+After rebooting, your nvidia driver will successfully installed. Type `nvidia-smi` in terminal and you will see this:
 ![nvidia_driver](/CUDA_Guide/nvidia-driver.png)
 
 **Note that the field of 'CUDA Version' is only showing the current driver's CUDA compatability version, and not indicative of what CUDA is installed.**
+
+## Install CUDA 10.0
