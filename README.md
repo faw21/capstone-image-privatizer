@@ -1,5 +1,5 @@
 # Capstone Project -- Studying the Impact of Using Privatizers across Different Image-based Detection Tasks
----
+
 This repository provides functionalities to learn the impact of blurring faces on estimating human poses.
 
 ## My environment configuration:
@@ -9,12 +9,23 @@ This repository provides functionalities to learn the impact of blurring faces o
 - OpenCV 3
 - etc
 
-## Install
+## Installation
+### Install Python Dependencies
+Clone the repo and install 3rd-party libraries.
+```
+$ git clone https://github.com/faw21/capstone-image-privatizer.git
+$ cd capstone-image-privatizer
+$ pip3 install -r requirements.txt
+```
+This repository requires numpy 1.17.1. If you already have another version of numpy installed, **MAKE SURE UNINSTALL IT FIRST THEN INSTALL 1.17.1**.
+```
+$ pip3 uninstall numpy
+$ pip3 install numpy==1.17.1
+```
 
 ### Install CUDA 10.0 and CUDNN 7.6.5
 ---
-### Install Python Dependencies
----
+
 ### Make pafprocess
 ---
 
