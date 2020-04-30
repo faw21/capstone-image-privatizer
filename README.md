@@ -45,8 +45,8 @@ Now the repo is installed. You can try the following demo:
 $ python3 run_pose.py --model=cmu --resize=656x368 --image=./images_demo/apink1.jpg
 ```
 
-### Install Nvidia driver, CUDA 10.0, and CUDNN 7.6.5
-If you have not installed the CUDA and CUDNN, you can only run the 
+### Install Nvidia driver, CUDA=10.0, and CUDNN>=7.6.5
+If you have not installed the CUDA and CUDNN, you can only execute the face detection model and pose estimation model using CPU, which is super slow. Install CUDA and CUDNN to your machine to get GPU support. **The Tensorflow-GPU 1.14.0 only works with CUDA 10.0**.
 
 
 - **run_pose.py**: Evaluates human keypoints in a specific image and visualizes
