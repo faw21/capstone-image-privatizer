@@ -13,13 +13,20 @@ This repository provides functionalities to learn the impact of blurring faces o
 
 ## Installation
 ### Install Python Dependencies
-Clone the repo and install 3rd-party libraries.
+Clone the repo.
 ```
 $ git clone https://github.com/faw21/capstone-image-privatizer.git
 $ cd capstone-image-privatizer
+```
+
+Install CMake and other python dependencies.
+
+```
+$ sudo apt-get install cmake
 $ pip3 install -r requirements.txt
 ```
-This repository requires numpy 1.17.1. If you already have another version of numpy installed, **MAKE SURE UNINSTALL IT FIRST THEN INSTALL 1.17.1**.
+
+The previous step will install the latest version of numpy for you, while this repository requires numpy 1.17.1. For some reason, some environments allow multiple versions of numpy to co-exist. To make sure you are using the 1.17.1, REPEAT `pip3 uninstall numpy` until nothing shows up when you type `pip3 show numpy`, then install the numpy==1.17.1
 ```
 $ pip3 uninstall numpy
 $ pip3 install numpy==1.17.1
