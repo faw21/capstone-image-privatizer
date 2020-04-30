@@ -1,6 +1,6 @@
 # Capstone Project -- Studying the Impact of Using Privatizers across Different Image-based Detection Tasks
 ---
-This repository provides functionalities to estimate the impact of blurring faces on estimating human poses.
+This repository provides functionalities to learn the impact of blurring faces on estimating human poses.
 
 ## My environment configuration:
 - CUDA 10.0
