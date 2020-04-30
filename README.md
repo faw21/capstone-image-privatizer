@@ -20,7 +20,7 @@ This repository provides functionalities to estimate the impact of blurring face
 
 - **run.py**: Evaluates human keypoints in a specific image and visualizes
 - **eval.py**: Evaluates human keypoints in the dataset.
-- **blurring.py**: Blurs the entire image within the dataset.
+- **blur_entire_image.py**: Blurs the entire image within the dataset.
 - **blurfaces_time_report.py**: detects and blurs faces within the dataset, and generates a csv file indicating how many faces does it detected and how long does it take to go through the dataset
 - **blurfaces_generatedata.py**: detects and blurs faces within the dataset. Instead of only reporting the result of face detection, this script actually generates new datasets with the faces blurred.
 - **eval_blurred.py**: Evaluates human keypoints in the blurred dataset.
