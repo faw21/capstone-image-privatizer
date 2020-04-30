@@ -6,8 +6,10 @@ This repository provides functionalities to learn the impact of blurring faces o
 - CUDA 10.0
 - Tensorflow 1.14.0
 - Python 3.6.9
-- OpenCV 3
+- OpenCV3
 - etc
+
+**Note that this repository works with COCO Dataset and Tensorflow. The COCO evaluation package does not provide support for Windows, and the Tensorflow does not provide GPU acceleration for Mac OS. So Ubuntu is recommended.**
 
 ## Installation
 ### Install Python Dependencies
@@ -23,13 +25,31 @@ $ pip3 uninstall numpy
 $ pip3 install numpy==1.17.1
 ```
 
-### Install CUDA 10.0 and CUDNN 7.6.5
----
+### Download Tensorflow Graph File(pd File)
+There are 4 pose estimation models available in this repo:
 
-### Make pafprocess
----
+- cmu
+- mobilenet_thin
+- mobilenet_v2_large
+- mobilenet_v2_small
 
-- **run.py**: Evaluates human keypoints in a specific image and visualizes
+CMU's model graph file is too large for git, so it was uploaded to an external cloud. You should download them before using it. Download scripts are provided in the model folder.
+
+```
+$ cd models/graph/cmu
+$ bash download.sh
+```
+### Demo
+Now the repo is installed. You can try the following demo:
+```
+$ python3 run_pose.py --model=cmu --resize=656x368 --image=./images_demo/apink1.jpg
+```
+
+### Install Nvidia driver, CUDA 10.0, and CUDNN 7.6.5
+If you have not installed the CUDA and CUDNN, you can only run the 
+
+
+- **run_pose.py**: Evaluates human keypoints in a specific image and visualizes
 - **eval.py**: Evaluates human keypoints in the dataset.
 - **blur_entire_image.py**: Blurs the entire image within the dataset.
 - **blurfaces_time_report.py**: detects and blurs faces within the dataset, and generates a csv file indicating how many faces does it detected and how long does it take to go through the dataset
