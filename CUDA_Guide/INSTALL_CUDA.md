@@ -32,3 +32,7 @@ After installing the driver, you should use the following command to reboot your
 ```
 $ sudo shutdown -r now
 ```
+After rebooting, type `nvidia-smi` in terminal and you will see this:
+![nvidia_driver](/CUDA_Guide/nvidia-driver.png)
+
+**Note that the field of 'CUDA Version' is only showing the current driver's CUDA compatability version, and not indicative of what CUDA is installed.
