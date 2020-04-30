@@ -10,7 +10,7 @@ $ sudo reboot
 
 Then, type in the following command to display your GPU information:
 ```
-sudo lshw -c display
+$ sudo lshw -c display
 ```
 You would see a few lines similar to the following. If you have not installed any of the Nvidia driver, the configuration part will display "driver=nouveau".
 
@@ -18,7 +18,7 @@ You would see a few lines similar to the following. If you have not installed an
 
 Then run the following command to display nvidia drivers that are compatible with your GPU:
 ```
-sudo ubuntu-drivers devices
+$ sudo ubuntu-drivers devices
 ```
 You shall see the following:
 
@@ -26,9 +26,9 @@ You shall see the following:
 
 We want the lastest version of nvidia driver, that is, `nvidia-driver-440`. Type the following command to install the driver:
 ```
-sudo apt-get install nvidia-driver-440
+$ sudo apt-get install nvidia-driver-440
 ```
 After installing the driver, you should use the following command to reboot your machine. PS. Some machines may occur problems here if use `sudo reboot`
 ```
-sudo shutdown -r now
+$ sudo shutdown -r now
 ```
