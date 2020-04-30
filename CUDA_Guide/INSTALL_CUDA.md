@@ -19,6 +19,7 @@ You would see a few lines similar to the following. If you have not installed an
 
 Then run the following command to display nvidia drivers that are compatible with your GPU:
 ```
+$ sudo add-apt-repository ppa:graphics-drivers
 $ sudo ubuntu-drivers devices
 ```
 You shall see the following:
