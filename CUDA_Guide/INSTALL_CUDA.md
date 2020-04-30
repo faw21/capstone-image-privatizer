@@ -26,7 +26,7 @@ You shall see the following:
 
 We want the lastest version of nvidia driver, that is, `nvidia-driver-440`. Type the following command to install the driver:
 ```
-$ sudo apt-get install nvidia-driver-440
+$ sudo apt install nvidia-driver-440
 ```
 After installing the driver, you should use the following command to reboot your machine. PS. Some machines may occur problems here if use `sudo reboot`
 ```
