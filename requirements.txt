@@ -1,0 +1,16 @@
+tensorflow-gpu==1.14.0
+opencv-python
+cython
+argparse
+dill
+fire
+matplotlib
+numba
+psutil
+pycocotools
+requests
+scikit-image
+scipy
+slidingwindow
+tqdm
+git+https://github.com/ppwwyyxx/tensorpack.git
