@@ -50,7 +50,7 @@ $ python3 run_face.py --radius=15 --image_dir=./images_demo/apink1.jpg
 If you have not installed the CUDA and CUDNN, you can only execute the face detection model and pose estimation model using CPU, which is super slow. Install CUDA and CUDNN to your machine to get GPU support. **The Tensorflow-GPU 1.14.0 only works with CUDA 10.0**.
 
 ### Acquire dataset
-You can download the [2017 COCO Validation Dataset](http://images.cocodataset.org/zips/val2017.zip)
+You can download the [2017 COCO Validation Dataset](http://images.cocodataset.org/zips/val2017.zip) and the corresponding [annotation](http://images.cocodataset.org/annotations/annotations_trainval2017.zip), which I used on this repo. You can also check out other versions of COCO dataset here: http://cocodataset.org/#download
 
 - **eval.py**: Evaluates human keypoints in the dataset.
 - **blur_entire_image.py**: Blurs the entire image within the dataset.
