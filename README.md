@@ -12,6 +12,11 @@ This repository provides functionalities to learn the impact of blurring faces o
 **Note that this repository works with COCO Dataset and Tensorflow. The COCO evaluation package does not provide support for Windows, and the Tensorflow does not provide GPU acceleration for Mac OS. So Ubuntu is recommended.**
 
 ## Installation
+### Install Nvidia driver, CUDA=10.0, and CUDNN>=7.6.5
+If you have not installed the CUDA and CUDNN, you can only execute the face detection model and pose estimation model using CPU, which is super slow. Install CUDA and CUDNN to your machine to get GPU support. **The Tensorflow-GPU 1.14.0 only works with CUDA 10.0**.
+
+You can check out my personal experience of [installing CUDA](https://github.com/faw21/capstone-image-privatizer/tree/master/CUDA_Guide)
+
 ### Install Python Dependencies
 Clone the repo.
 ```
@@ -28,7 +33,7 @@ $ pip3 install numpy==1.17.1
 $ pip3 install -r requirements.txt
 ```
 
-The previous step will install the latest version of numpy for you, while this repository requires numpy 1.17.1. For some reason, some environments allow multiple versions of numpy to co-exist. To make sure you are using the 1.17.1, REPEAT `pip3 uninstall numpy` until nothing shows up when you type `pip3 show numpy`, then install the numpy==1.17.1
+This repository requires numpy 1.17.1. Even though we manually install this version of numpy as shown above, the last step will stil install the latest version of numpy for you. For some reason, some environments allow multiple versions of numpy to co-exist. To make sure you are using the 1.17.1, REPEAT `pip3 uninstall numpy` until nothing shows up when you type `pip3 show numpy`, then install the numpy==1.17.1 again.
 ```
 $ pip3 uninstall numpy
 $ pip3 install numpy==1.17.1
@@ -55,11 +60,13 @@ $ python3 run_pose.py --model=cmu --resize=656x368 --image=./images_demo/apink1.
 $ python3 run_face.py --radius=15 --image_dir=./images_demo/apink1.jpg
 ```
 
-### Install Nvidia driver, CUDA=10.0, and CUDNN>=7.6.5
-If you have not installed the CUDA and CUDNN, you can only execute the face detection model and pose estimation model using CPU, which is super slow. Install CUDA and CUDNN to your machine to get GPU support. **The Tensorflow-GPU 1.14.0 only works with CUDA 10.0**.
+
 
 ### Acquire dataset
-You can download the [2017 COCO Validation Dataset](http://images.cocodataset.org/zips/val2017.zip) and the corresponding [annotation](http://images.cocodataset.org/annotations/annotations_trainval2017.zip), which I used on this repo. You can also check out other versions of COCO dataset here: http://cocodataset.org/#download
+You can download the [2017 COCO Validation Dataset](http://images.cocodataset.org/zips/val2017.zip) and the corresponding [annotation](http://images.cocodataset.org/annotations/annotations_trainval2017.zip), which I used on this repo. You can also check out other versions of COCO dataset here: http://cocodataset.org/#download. 
+
+### Run other scripts
+At this point, you are good to go. Try the following scripts to evaluate human poses or detecting faces. For more information about those scripts, please see the comments inside the files.
 
 - **eval.py**: Evaluates human keypoints in the dataset.
 - **blur_entire_image.py**: Blurs the entire image within the dataset.
