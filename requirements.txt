@@ -1,6 +1,5 @@
 tensorflow-gpu==1.14.0
 opencv-python
-cython
 argparse
 dill
 fire
@@ -14,3 +13,4 @@ scipy
 slidingwindow
 tqdm
 git+https://github.com/ppwwyyxx/tensorpack.git
+face_recognition
