@@ -47,6 +47,9 @@ fi
 ```
 
 ## Reboot
+```
+sudo reboot
+```
 
 ## Check Installation
 Check Nvidia Driver:
@@ -66,3 +69,5 @@ Check CUDNN:
 /sbin/ldconfig -N -v $(sed ‘s/:/ /’ <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudnn
 ```
 ![CUDNN](/CUDA_Guide/CUDNN.png)
+
+#### Congratulations!
