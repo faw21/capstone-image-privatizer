@@ -21,10 +21,7 @@ $ sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repo
 $ sudo bash -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda_learn.list'
 ```
 
-After rebooting, your nvidia driver will successfully installed. Type `nvidia-smi` in terminal and you will see this:
-![nvidia_driver](/CUDA_Guide/nvidia-driver.png)
 
-**Note that the field of 'CUDA Version' is only showing the current driver's CUDA compatability version, and not indicative of what CUDA is installed.**
 
 ## Install CUDA 10.0 and CUDNN 7
 ```
@@ -58,6 +55,8 @@ nvidia-smi
 ```
 ![nvidia_driver](/CUDA_Guide/nvidia-driver.png)
 
+**Note that the field of 'CUDA Version' is only showing the current driver's CUDA compatability version, and not indicative of what CUDA is installed.**
+
 Check CUDA:
 ```
 nvcc -V
@@ -70,4 +69,4 @@ Check CUDNN:
 ```
 ![CUDNN](/CUDA_Guide/CUDNN.png)
 
-#### Congratulations!
+#### Congratulations! You are good to go.
