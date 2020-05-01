@@ -23,6 +23,8 @@ Install CMake and other python dependencies.
 
 ```
 $ sudo apt-get install cmake
+$ pip3 install cython
+$ pip3 install numpy==1.17.1
 $ pip3 install -r requirements.txt
 ```
 
