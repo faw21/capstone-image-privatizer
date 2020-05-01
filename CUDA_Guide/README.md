@@ -7,12 +7,13 @@ sudo rm /etc/apt/sources.list.d/cuda*
 sudo apt remove --autoremove nvidia-cuda-toolkit
 sudo apt remove --autoremove nvidia-*
 ```
-## Setup the correct CUDA PPA on your system
-Upgrade everything in Ubuntu and reboot:
+
+## Upgrade everything in Ubuntu and reboot
 ```
 $ sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade
 $ sudo reboot
 ```
+## Setup the correct CUDA PPA on your system
 
 ```
 $ sudo add-apt-repository ppa:graphics-drivers/ppa
